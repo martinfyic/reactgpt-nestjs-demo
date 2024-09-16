@@ -4,11 +4,11 @@ Curso de Fernando Herrera en Udemy _OpenAi: Ejercicios prácticos y asistentes c
 
 ## Stack
 
-- React
-- TypeScript
-- Vite
-- TailwindCSS
-- React Router Dom
+- [React](https://es.react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Router Dom](https://reactrouter.com/en/main)
 
 ## Puesta en marcha
 
