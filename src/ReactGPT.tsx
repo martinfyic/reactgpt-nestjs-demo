@@ -1,3 +1,3 @@
 export const ReactGPT = () => {
-	return <div>ReactGPT</div>;
+	return <h1>ReactGPT</h1>;
 };
