@@ -10,6 +10,11 @@ Curso de Fernando Herrera en Udemy _OpenAi: Ejercicios prácticos y asistentes c
 - [TailwindCSS](https://tailwindcss.com/)
 - [React Router Dom](https://reactrouter.com/en/main)
 
+## Iconos
+
+- [Font Awesome](https://fontawesome.com/)
+- [CDN Font Awesome](https://cdnjs.com/libraries/font-awesome)
+
 ## Puesta en marcha 🏁
 
 1. Clonar repositorio
