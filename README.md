@@ -10,9 +10,12 @@ Curso de Fernando Herrera en Udemy _OpenAi: Ejercicios prácticos y asistentes c
 - [TailwindCSS](https://tailwindcss.com/)
 - [React Router Dom](https://reactrouter.com/en/main)
 
-## Puesta en marcha
+## Puesta en marcha 🏁
 
 1. Clonar repositorio
+   1. ```bash
+      git clone https://github.com/martinfyic/reactgpt-nestjs-demo.git
+      ```
 2. Ejecutar comando para restablecer los _node_modules_
    1. ```bash
       pnpm install
