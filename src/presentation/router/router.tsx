@@ -89,7 +89,7 @@ export const router = createBrowserRouter([
 			})),
 			{
 				path: '',
-				element: <Navigate to={menuRoutes[0].to} />,
+				element: <Navigate to={menuRoutes[0].to} />, // Primera pagina que se dirige el usuario
 			},
 		],
 	},
