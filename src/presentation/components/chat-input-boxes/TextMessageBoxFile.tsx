@@ -1,17 +1,22 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useRef, useState } from 'react';
 
 interface Props {
 	onSendMessage: (message: string) => void;
 	placeholder?: string;
 	disableCorrections?: boolean;
+	accept?: string;
 }
 
 export const TextMessageBoxFile = ({
 	onSendMessage,
 	disableCorrections = false,
 	placeholder,
+	accept,
 }: Props) => {
 	const [message, setMessage] = useState('');
+	const [selectedFile, setSelectedFile] = useState<File | null>();
+
+	const inputFileRef = useRef<HTMLInputElement>(null);
 
 	const handleSendMessage = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
@@ -31,9 +36,19 @@ export const TextMessageBoxFile = ({
 				<button
 					type='button'
 					className='flex items-center justify-center text-gray-400 hover:text-gray-600'
+					onClick={() => inputFileRef.current?.click()}
 				>
 					<i className='fa-solid fa-paperclip text-xl'></i>
 				</button>
+				<input
+					type='file'
+					ref={inputFileRef}
+					accept={accept}
+					onChange={e => setSelectedFile(e.target.files?.item(0))}
+					name='selectedFile'
+					id='selectedFile'
+					hidden
+				/>
 			</div>
 
 			<div className='flex-grow'>
@@ -55,8 +70,17 @@ export const TextMessageBoxFile = ({
 			</div>
 
 			<div className='ml-4'>
-				<button className='btn-primary'>
-					<span className='mr-2'>Enviar</span>
+				<button
+					className='btn-primary'
+					disabled={!selectedFile}
+				>
+					{!selectedFile ? (
+						<span className='mr-2'>Enviar</span>
+					) : (
+						<span className='mr-2'>
+							{selectedFile.name.substring(0, 10) + '...'}
+						</span>
+					)}
 					<i className='fa-regular fa-paper-plane'></i>
 				</button>
 			</div>
