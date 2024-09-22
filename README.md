@@ -2,6 +2,10 @@
 
 Curso de Fernando Herrera en Udemy _OpenAi: Ejercicios prácticos y asistentes con React + NestJS_
 
+## Backend
+
+- [Nest-GPT](https://github.com/martinfyic/reactgpt-nestjs-demo-bk.git)
+
 ## Stack
 
 - [React](https://es.react.dev/)
